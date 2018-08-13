@@ -1,0 +1,45 @@
+{
+  "name": "ajt_microservice",
+  "version": "1.0.0",
+  "description": "Authentication, JSON patching, Image Thumnnail Generation microservice using node.js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha */*.test.js",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "Authentication",
+    "JSON",
+    "PATCHING"
+  ],
+  "author": "Hassan Nemir",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^2.0.1",
+    "easyimage": "^3.1.0",
+    "express": "^4.16.3",
+    "express-processimage": "^8.0.1",
+    "fs": "0.0.1-security",
+    "gm": "^1.23.1",
+    "graphicsmagick": "0.0.1",
+    "image-downloader": "^3.4.1",
+    "imagemagick": "^0.1.3",
+    "json-patch": "^0.7.0",
+    "jsonwebtoken": "^8.3.0",
+    "nodemon": "^1.18.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.3.0",
+    "expect": "^23.5.0",
+    "lint-staged": "^7.2.2",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
