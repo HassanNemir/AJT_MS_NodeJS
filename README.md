@@ -23,3 +23,37 @@ Protected endpoints require JWT to be included in each request, if the JWT token
 - Request includes valid token and valid image URL.
 - Returns a 50 x 50 thumbnail from the supplied image.
 
+
+
+## Documentation
+
+
+#### Prerequisites 
+ - [ NodeJS](https://nodejs.org/en/)
+ - [ Git](https://git-scm.com/)
+ 
+ 
+ 
+  ##### Clone the repository :
+  
+ ` https://github.com/HassanNemir/AJT_MS_NodeJS/`
+ 
+  ##### Install the node packages using npm
+  
+  `npm i`
+  
+  ##### Start the application
+  
+  `npm start`
+  
+  The API is available at: http://localhost:3000/
+  
+  ### API Methods
+  
+| Route Name          | Method       | Parameters   |URL|
+| -----------------   |:------------:| ------------:|:------:|
+| Login               | POST         |name, password | http://localhost:3000/login |
+| Patch               | POST         | token (JWT token), json (JSON object to be patched), patch | http://localhost:3000/patch |
+| Thumbnail Generator | POST         |token (JWT token), path (valid image path) | http://localhost:3000/thumbgen |
+  
+  
